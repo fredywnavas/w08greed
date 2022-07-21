@@ -157,10 +157,7 @@ def main():
 
             cast.add_game_object("falling_artifacts", falling_artifact)
 
-    # # start the game
-    # keyboard_service = KeyboardService(CELL_SIZE)
-    # video_service = VideoService(CAPTION, MAX_X, MAX_Y, CELL_SIZE, FRAME_RATE)
-    # director = Director(keyboard_service, video_service, cast)
+    # start the game
     director.start_game()
     #print statements below are for debuggin 
     print('the total number of checks',checks)
