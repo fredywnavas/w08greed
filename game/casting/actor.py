@@ -4,7 +4,8 @@ import math
 
 
 class Actor:
-    """A visible, moveable thing that participates in the game. 
+    """
+    A visible, moveable thing that participates in the game. 
     
     The responsibility of Actor is to keep track of its appearance, position and velocity in 2d 
     space.
@@ -17,7 +18,9 @@ class Actor:
     """
 
     def __init__(self):
-        """Constructs a new Actor."""
+        """
+        Constructs a new Actor.
+        """
         self._text = ""
         self._font_size = 15
         self._color = Color(255, 255, 255)
@@ -25,7 +28,8 @@ class Actor:
         self._velocity = Point(0, 0)
 
     def get_color(self):
-        """Gets the actor's color as a tuple of three ints (r, g, b).
+        """
+        Gets the actor's color as a tuple of three ints (r, g, b).
         
         Returns:
             Color: The actor's text color.
@@ -33,7 +37,8 @@ class Actor:
         return self._color
 
     def get_font_size(self):
-        """Gets the actor's font size.
+        """
+        Gets the actor's font size.
         
         Returns:
             Point: The actor's font size.
@@ -41,7 +46,8 @@ class Actor:
         return self._font_size
 
     def get_position(self):
-        """Gets the actor's position in 2d space.
+        """
+        Gets the actor's position in 2d space.
         
         Returns:
             Point: The actor's position in 2d space.
@@ -49,7 +55,8 @@ class Actor:
         return self._position
     
     def get_text(self):
-        """Gets the actor's textual representation.
+        """
+        Gets the actor's textual representation.
         
         Returns:
             string: The actor's textual representation.
@@ -57,7 +64,8 @@ class Actor:
         return self._text
 
     def get_velocity(self):
-        """Gets the actor's speed and direction.
+        """
+        Gets the actor's speed and direction.
         
         Returns:
             Point: The actor's speed and direction.
@@ -65,7 +73,8 @@ class Actor:
         return self._velocity
     
     def move_next(self, max_x, max_y):
-        """Moves the actor to its next position according to its velocity. Will wrap the position 
+        """
+        Moves the actor to its next position according to its velocity. Will wrap the position 
         from one side of the screen to the other when it reaches the given maximum x and y values.
         
         Args:
@@ -77,7 +86,8 @@ class Actor:
         self._position = Point(x, y)
 
     def set_color(self, color):
-        """Updates the color to the given one.
+        """
+        Updates the color to the given one.
         
         Args:
             color (Color): The given color.
@@ -85,7 +95,8 @@ class Actor:
         self._color = color
 
     def set_position(self, position):
-        """Updates the position to the given one.
+        """
+        Updates the position to the given one.
         
         Args:
             position (Point): The given position.
@@ -93,7 +104,8 @@ class Actor:
         self._position = position
     
     def set_font_size(self, font_size):
-        """Updates the font size to the given one.
+        """
+        Updates the font size to the given one.
         
         Args:
             font_size (int): The given font size.
@@ -101,7 +113,8 @@ class Actor:
         self._font_size = font_size
     
     def set_text(self, text):
-        """Updates the text to the given value.
+        """
+        Updates the text to the given value.
         
         Args:
             text (string): The given value.
@@ -109,7 +122,8 @@ class Actor:
         self._text = text
 
     def set_velocity(self, velocity):
-        """Updates the velocity to the given one.
+        """
+        Updates the velocity to the given one.
         
         Args:
             velocity (Point): The given velocity.
@@ -117,7 +131,8 @@ class Actor:
         self._velocity = velocity
     
     def distance(self, point):
-        """check the distance from the give point.
+        """
+        check the distance from the give point.
         
         Args:
             point (Point): The point where to compare the distance

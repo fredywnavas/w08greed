@@ -13,7 +13,8 @@ class FallingArtifact(Actor):
         self._points = 0
         
     def get_points(self):
-        """Gets the artifact's message.
+        """
+        Gets the artifact's message.
         
         Returns:
             string: The message.
@@ -21,7 +22,8 @@ class FallingArtifact(Actor):
         return self._points
     
     def set_points(self, points):
-        """Updates the message to the given one.
+        """
+        Updates the message to the given one.
         
         Args:
             message (string): The given message.
