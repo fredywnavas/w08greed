@@ -1,7 +1,6 @@
-# w08greed
-code assignment for week08
+# Greed
 
-## Overview
+# Overview
 
 Greed is a game in which the player seeks to gather as many falling gems as possible. The game continues as long as the player wants more!
 
